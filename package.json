@@ -27,7 +27,6 @@
   "dependencies": {
     "@josebarrios/intangible": "^0.1.1",
     "@josebarrios/person": "^1.1.19",
-    "aggregation": "^1.2.0",
-    "mixin": "^0.2.0"
+    "aggregation": "^1.2.0"
   }
 }
