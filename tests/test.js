@@ -5,16 +5,16 @@ var StructuredValue = require('../index.js');
 
 
 var model = {};
-model.image = 'url';
 model.givenName = 'jose';
 model.familyName = 'barrios';
 let structuredValue = new StructuredValue(model);
 
 describe('StructuredValue\n', function() {
-  describe('Properties:', function() {
-    describe('structuredValue.image', function() {
+  describe('Static Methods:', function() {
+    describe('StructuredValue.isNumber()', function() {
       it('should ...', function() {
-        assert.equal(structuredValue.image, 'url');
+        assert.equal(StructuredValue.isNumber(1), true);
+        assert.equal(StructuredValue.isNumber(''), false);
       });
     });
   });
