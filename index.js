@@ -1,10 +1,15 @@
-const Intangible = require('@josebarrios/dc-intangible');
+const IntangibleDataController = require('dc-intangible');
+const TYPE = 'StructuredValueDataController'
 
-class StructuredValue extends Intangible{
-    constructor(model){
-      model = model || {};
-      super(model)
-    }
+class StructuredValueDataController extends IntangibleDataController{
+
+	static get type(){ return TYPE; }
+
+	constructor(model){
+		model = model || {};
+		super(model)
+	}
+
 }
 
-module.exports = StructuredValue;
+module.exports = StructuredValueDataController;
